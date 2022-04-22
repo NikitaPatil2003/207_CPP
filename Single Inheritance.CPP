@@ -1,7 +1,7 @@
 #include<iostream.h>
 #include<conio.h>
 
-class student
+class Student
 {
   protected:
        int rollno;
@@ -9,7 +9,7 @@ class student
 
 };
 
-class Test:public student
+class Test:public Student
 {
    protected:
 	  int marks;
@@ -33,8 +33,20 @@ void Test :: get()
 
 void Test :: show()
 {
-      cout<<"Roll_no:-> "<<rollno;
-     cout<<"Student name:-> "<<rollno;
-     cout<<"Test_1 Marks:-> "<<rollno;
+      cout<<endl<<endl<<"Roll_no:-> "<<rollno<<endl;
+     cout<<"Student name:-> "<<sname<<endl;
+     cout<<"Test_1 Marks:-> "<<marks<<endl;
+
+}
+
+void main ()
+{
+   clrscr();
+    
+    Test t1;
+      t1.get();
+      t1.show();
+
+   getch();
 
 }
